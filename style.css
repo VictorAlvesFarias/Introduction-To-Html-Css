@@ -1,0 +1,466 @@
+.app {
+    margin-top: 30px;
+    max-width: 1500px;
+    display:flex ;
+    flex-direction: column;
+    width: 90%;
+}
+
+/*----------------Header----------------*/
+
+header {
+    border-top: 1px solid  rgb(253, 0, 76) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.logo  {
+    color: rgb(253, 0, 76);    
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border-bottom: 1px solid  rgb(253, 0, 76) ;
+    background-color: rgb(27, 27, 27);
+}
+
+@media screen and (max-width:700px) {
+    header {
+        position:sticky;
+        top: 0;
+    }
+}
+
+/*---------------Navegaçao--------------*/
+
+.nav_header_list {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px;
+    background-color:rgb(17, 17, 17);
+    min-height: 30px;
+    width: 100%;
+    position: sticky;
+    z-index: 0;
+    top: 0;
+    box-shadow: black 0px 3px  15px 0px;
+}
+
+.nav_header_list a:hover {
+    color: rgb(253, 0, 76);
+    transition: 0.5s;
+    background-color: rgb(15, 15, 15);
+    border-bottom: solid rgb(253, 0, 76) 1px;
+}
+
+.name_header_link {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 16%;
+    height: 30px;
+}
+
+/* #menu-checkbox {
+    display: none;
+}
+
+.menu-checkbox-button {
+    display: none;
+}
+
+#menu-checkbox:checked ~ .nav_header_list {
+    display: flex;
+}
+ 
+@media screen and (max-width:700px) {
+    .nav_header_list {
+        display: none;
+        flex-direction: column;
+        position: unset;
+    }
+   .menu-checkbox-button {
+        display: flex;
+    }
+} */
+
+/*-----------------Main-----------------*/
+body {
+    background-color:rgb(27, 27, 27);
+    margin: 0px;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a:hover {
+    color: rgb(253, 0, 76);
+}
+
+.main_notice_image_background img {
+    width: 90%;
+    margin: 0px;
+    padding: 0;
+    transition: width 0.4s;
+    border-bottom-right-radius: 5px;
+    border-bottom: solid rgb(253, 0, 76) 7px
+}
+
+.main_notice_image_background img:hover {
+    width: 100%;
+
+}
+
+.main_notice_image_background {
+    max-width: 600px; 
+}
+
+.notice_primary_article {
+    margin: 0px;
+    padding: 0;
+}
+
+.image_article img {
+    width: 90%;
+    max-height: 200px;
+    border-bottom-right-radius: 5px;
+    border-bottom: solid rgb(253, 0, 76) 7px  ;
+    transition: 0.4s;
+}
+
+.image_article img:hover {
+    width: 100%;
+}
+
+.image_article {
+    max-width: 330px;
+    max-height: 200px;
+}
+
+.main_div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    width: 100%;
+}
+
+.main_conteiner {
+    max-width: 700px;
+    
+}
+
+.title_article {
+    max-width: 330px;
+}
+
+.link_notice a {
+    font-size: 9pt;
+    color: white;
+    font-weight: lighter;
+}
+
+.link_notice {
+    color: rgb(253, 0, 76);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+@media screen and (max-width:935px) {
+    .main_notice {
+        width: 100%;
+        max-width: unset;
+    }
+    .main_conteiner {
+        width: 100%;
+        max-width: unset;
+    }
+    .main_notice_image_background img{
+        width: 100%;
+        min-width: unset;
+    }
+
+    .second_main_notices {
+        width: 100%;
+    }
+
+    .image_article {
+        max-width: unset;
+        max-height: unset;
+    }
+
+    .image_article img {
+        max-height: unset;
+        border-bottom-right-radius: 5px;
+        border-bottom: solid rgb(253, 0, 76) 7px;
+        transition: 0.4s;
+    }
+
+    .main_notice_image_background {
+        max-width: unset;
+    }
+
+}
+
+/*-----------------Mais-----------------*/
+
+.image_articles img {
+    width: 100%;
+    padding: 0;
+    margin-left: 0px;
+    border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: solid rgb(253, 0, 76) 7px
+}
+
+.image_articles {
+    border-radius: 5px;
+    max-width: 280px;
+    
+}
+
+.title_articles_list a {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.title_articles_list {
+    max-width: 500px;
+    margin-left: 15px;
+}
+
+.article_n_ {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.title_main_more_notices h2 {
+    color: white;
+}
+
+.see_more_article_list a {
+    color: white;
+    margin-left: 30px;
+}
+
+/*----------------Footer----------------*/
+
+.footer {
+    background-color: rgb(17, 17, 17) ;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: black 0px 3px  15px 0px;
+
+}
+
+.footer {
+    color: white;
+    border-top: 1px solid  rgb(253, 0, 76) ;
+}
+
+.footer_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    height: 200px;
+    font-size: 7pt;
+}
+
+.footer_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer_list_L {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.line_h {
+    width: 65%;
+    background-color: rgb(253, 0, 76);
+    height: 3px;
+}
+
+/*----------------Modal----------------*/
+
+.modal {
+    width: 300px;
+    height: 450px;
+    background-color: rgba(12, 12, 12);
+    margin-top: 90px;
+    transition: 0.5s;
+}
+
+.info a {
+    font-size: 9pt;
+    margin: 0;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.info {
+   width: 75%;
+}
+   
+.info a:hover {
+   color: rgb(253, 0, 76);
+   text-shadow: rgb(253, 0, 76) 0 0 50px;
+   transition: 0.5s;
+}
+
+.close {
+    background-color: rgb(253, 0, 76);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -5px;
+    position: relative;
+    left: -5px;
+}
+
+.close a {
+     color: white;
+}
+ 
+.enter {
+     display: flex;
+     align-items: center ;
+     height: 100%;
+     width: 100%;
+     color:white;
+     flex-direction: column;
+     text-shadow: 0 0 100px  rgb(255, 0, 76); 
+}
+
+.enter p {
+    font-size: 9pt;
+}
+
+.login {
+     background-color: rgba(17, 17, 17, 0.644);
+     border: 1px solid rgb(253, 0, 76) ;
+     margin-bottom: 10px;
+     margin-left: 10px;
+     width: 75%;
+     color: white;
+}
+
+.login:focus-visible {
+    outline: none;
+    box-shadow: 0 0 100px rgb(253, 0, 76);
+    transition: 0.5s;
+}
+
+
+
+.registration  {
+    font-size: 9pt;
+    margin: 0;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+}
+
+.registration a {
+     color: rgb(253, 0, 76);
+}
+
+.input_enter {
+    display: flex;
+    flex-direction: row;
+}
+
+.label p {
+    font-size: 7pt;
+    color: rgb(253, 0, 76);
+}
+
+.modal_conteiner {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.644);
+    align-items: center;
+    justify-content: center;
+    font-family: 'Varela Round', sans-serif;
+    position: fixed;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    transition: 1s;
+    opacity: 0;
+}
+
+ .modal_conteiner:target {
+     visibility: visible;
+     opacity: 1;
+     display: block ;
+}
+
+ .modal_m {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.button_login {
+    background-color: rgb(253, 0, 76);
+    border-radius: 5%;
+    width: 40%;
+    height: 9%;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    border: none;
+    transition: 0.5s;
+}
+
+.button_login:hover {
+    box-shadow: 0 0 50px rgb(253, 0, 76);
+}
+
+/*-------------------------------------*/
